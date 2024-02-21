@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithFil - Portfolio</title>
+
+    <!-- === CSS === -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- === Icons === -->
+    <script src="https://kit.fontawesome.com/b7aa50f1b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="container">
+            <nav>
+                <a href=""><img src="./images/logo.png" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <br><br><br>
+                <p>Web & Java development</p>
+                <h1>Hi, I'm <span>CodeWithFil</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== ABOUT ====== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/about.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm a passionate developer with a vivid creativity and a strong dedication to the world of programming. My mission is to create innovative and engaging solutions through code.</p>
+                    <br>
+                    <p>With a solid experience in developing Spigot plugins and designing websites using the latest HTML, CSS, and JavaScript technologies, I'm always on the lookout for new challenges and opportunities to expand my knowledge.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End & Back-End</span><br> Web sites</li>
+                            <li><span>Java Development</span><br> Spigot plugins & Discord BOT like JDA</li>
+                            <li><span>Other</span><br> Debugging and bug fixes</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span class="bold">My experiences</span></li>
+                            <li>I am a passionate developer with over [insert number] years of experience in the field of programming and web development. Throughout my career, I have worked on a wide range of projects, from Minecraft server plugins to complex web applications.</li>
+                            <li>My experience spans across many technologies and platforms, with in-depth skills in programming languages such as Java, JavaScript, HTML, and CSS. I have developed Spigot plugins for Minecraft servers that have enriched the gaming experience for thousands of users, providing innovative and reliable functionalities.</li>
+                            <li>My extensive knowledge of development tools such as Git, IntelliJ IDEA, and Visual Studio Code allows me to work efficiently and collaboratively on projects of any scale.</li>
+                            <li>Beyond my technical experience, I have demonstrated skills in interfacing with clients and understanding their needs to translate them into effective software solutions. I am always eager to learn and adopt new technologies and methodologies to stay updated in the field of software development.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span class="bold">Lacerba certification</span><br></li>
+                            <a href="./documents/Lacerba_Certification_e126f5.pdf" target="_blank" class="btn">Click to view</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SERVICES ====== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h1>Spigot plugins</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, exercitationem? Assumenda, exercitationem? Expedita non magnam temporibus voluptatem perspiciatis voluptas esse, maiores illum nisi aliquid autem, alias excepturi. Repudiandae, a necessitatibus?</p>
+                    <a href="https://www.fiverr.com/s/5qKRrb">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>WebSites in Front-End</h1>
+                    <p>I will create a website with Front-End languages for you ​​in record time (Custom Portfolio, Company WebSite and more)</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h1>WebSites in Back-End</h1>
+                    <p>I will create a perfect and clean database management system for you (login/register, conversations and more)</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1><br>
+                    <p><i class="fa-solid fa-paper-plane"></i> hinceanufilippo4@gmail.com</p><br>
+                    <!--<p><i class="fa-solid fa-phone"></i> 0123456789</p>-->
+                    <div class="social-icons">
+                        <a href="https://t.me/Filipeti"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://discord.gg/SWuSQjStsh"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/codewithfil?igsh=MWRubG1rYzBucWZ1Mw=="><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="submit">Submit (not work at the moment)</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copiright © <a href="index.html">CodeWithFil</a>, all right reserved</p>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/menus.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeXu86g9wAgDF_kDZlTU-zEMJnlPlD7Udp5WaIbhZCT-VutI91aGwNqruESLN6lTcEJw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
