@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cyan: #00bfbf;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -60,7 +64,7 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: var(--cyan);
 }
 
 /* === About === */
@@ -103,7 +107,7 @@ nav ul li a:hover{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: var(--cyan);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -182,7 +186,7 @@ nav ul li a:hover{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: var(--cyan);
     transform: translateY(-10px);
 }
 
@@ -194,7 +198,7 @@ nav ul li a:hover{
     flex-basis: 60%;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: var(--cyan);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -210,7 +214,7 @@ nav ul li a:hover{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: var(--cyan);
     transform: translateY(-5px);
 }
 .contact-right form{
@@ -231,8 +235,8 @@ form input, form textarea{
     margin: 50px auto;
     width: fit-content;
     color: #fff;
-    background: #ff004f;
-    border: 1px solid #ff004f;
+    background: var(--cyan);
+    border: 1px solid var(--cyan);
     padding: 14px 50px;
     border-radius: 6px;
     cursor: pointer;
@@ -240,7 +244,7 @@ form input, form textarea{
 }
 .submit:hover{
     background: #fff;
-    color: #ff004f;
+    color: var(--cyan);
 }
 .copyright{
     width: 100%;
@@ -251,7 +255,7 @@ form input, form textarea{
     margin-top: 20px;
 }
 .copyright a{
-    color: #ff004f;
+    color: var(--cyan);
     text-decoration: none;
     transition: 0.5s ease;
 }
@@ -289,7 +293,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: var(--cyan);
         position: fixed;
         top: 0;
         right: -2200px;
